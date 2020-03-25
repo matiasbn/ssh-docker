@@ -1,4 +1,4 @@
-docker build --rm -t test-dparadig .    
-docker container rm dparadig -f  
-docker container run --publish 23:22 --detach --name dparadig test-dparadig
-docker exec -ti dparadig /bin/bash    
+docker build --rm -t sshdocker .    
+docker container rm ssh-docker -f  
+docker container run --publish 23:22 --detach --name ssh-docker sshdocker
+docker exec -ti ssh-docker /bin/bash    
